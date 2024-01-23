@@ -1,8 +1,8 @@
-const form = document.querySelector("#form");
-const iusername = document.querySelector("#iusername");
-const iemail = document.querySelector("#iemail");
-const ipassword = document.querySelector("#ipassword");
-const iConfirmPassword = document.querySelector("#iconfirm-password");
+const form = document.querySelector("form");
+const iusername = document.querySelector("iusername");
+const iemail = document.querySelector("iemail");
+const ipassword = document.querySelector("ipassword");
+const iConfirmPassword = document.querySelector("iconfirm-password");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
