@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2cd63c9772.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="assets/js/index.js"></script>
+  <script src="assets/js/index.js" defer></script>
   <title>Document</title>
 </head>
 
@@ -15,31 +17,31 @@
       <section class="flex justify-center  bg-blue-500 bg-cover w-full p-7">
         <h2 class="text-white text-2xl font-bold">Criar Uma Conta</h2>
       </section>
-      <form id="form" class="p-4">
+      <form id="form" class="p-6">
         <div class="flex flex-col relative form-control">
           <label for="iusername" class="inline-block my-2">Nome de Usuário</label>
           <input type="text" name="username" id="iusername" placeholder="Digite seu nome de usuário..."
-            class="block border border-gray-200 rounded-lg w-full p-2" />
-          <div>
-            <i class="fas fa-exclamation-circle text-red-500 p-1 absolute top-12 right-2.5 invisible"></i>
-            <i class="fas fa-check-circle text-green-400 p-1 absolute top-12 right-2.5 invisible"></i>
-            <small class=" text-red-500 invisible">Mensagem de Erro</small>
+            class="block border-2 border-gray-200 rounded-lg w-full p-2" />
+          <div class="check-control">
+            <i  class="fas fa-exclamation-circle text-red-500 p-1 absolute top-12 right-2.5 invisible"></i>
+            <i  class="fas fa-check-circle text-green-400 p-1 absolute top-12 right-2.5 invisible"></i>
+            <small id="sm1" class=" text-red-500"></small>
           </div>
         </div>
         <div class="flex flex-col relative form-control">
           <label for="iemail" class="inline-block my-2">E-mail</label>
           <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail..."
-            class="block border border-gray-200 rounded-lg w-full p-2" />
+            class="block border-2 border-gray-200 rounded-lg w-full p-2" />
           <div>
             <i class="fas fa-exclamation-circle text-red-500 p-1 absolute top-12 right-2.5 invisible"></i>
             <i class="fas fa-check-circle text-green-400 p-1 absolute top-12 right-2.5 invisible"></i>
-            <small class=" text-red-500 invisible">Mensagem de Erro</small>
+            <small id="sm1" class=" text-red-500"></small>
           </div>
         </div>
         <div class="flex flex-col relative form-control">
           <label for="ipassword" class="inline-block my-2">Senha</label>
           <input type="password" name="password" id="ipassword" placeholder="Digite sua senha..."
-            class="block border border-gray-200 rounded-lg w-full p-2" />
+            class="block border-2 border-gray-200 rounded-lg w-full p-2" />
           <div>
             <i class="fas fa-exclamation-circle text-red-500 p-1 absolute top-12 right-2.5 invisible"></i>
             <i class="fas fa-check-circle text-green-400 p-1 absolute top-12 right-2.5 invisible"></i>
@@ -49,7 +51,7 @@
         <div class="flex flex-col relative form-control">
           <label for="iconfirm-password" class="inline-block my-2">Confime sua Senha</label>
           <input type="password" name="confirm-password" id="iconfirm-password" placeholder="Confirme sua senha..."
-            class="block border border-gray-200 rounded-lg w-full p-2" />
+            class="block border-2 border-gray-200 rounded-lg w-full p-2" />
           <div>
             <i class="fas fa-exclamation-circle text-red-500 p-1 absolute top-12 right-2.5 invisible"></i>
             <i class="fas fa-check-circle text-green-400 p-1 absolute top-12 right-2.5 invisible"></i>
@@ -62,11 +64,6 @@
     </div>
   </main>
 
-  <script src="https://kit.fontawesome.com/2cd63c9772.js" crossorigin="anonymous"></script>
-  <script src="
-      https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js
-      "></script>
-</body>
 </body>
 
 </html>
