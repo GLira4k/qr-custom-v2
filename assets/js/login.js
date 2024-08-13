@@ -68,7 +68,7 @@ function checkInputs() {
     if (formIsValid) {
         Swal.fire({
             title: "Bom trabalho!",
-            text: "Cadastro 100% válido.",
+            text: "Login realizado com sucesso!",
             icon: "success",
             confirmButtonColor: "#1D4ED8",
             confirmButtonText: "Ok",
